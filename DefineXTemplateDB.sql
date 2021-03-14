@@ -250,8 +250,8 @@ DROP TABLE IF EXISTS `ask_question`;
 CREATE TABLE IF NOT EXISTS `ask_question` (
   `Id` int unsigned NOT NULL AUTO_INCREMENT,
   `UserId` int unsigned NOT NULL,
-  `Header` MEDIUMBLOB DEFAULT NULL,
-  `Detail` varchar(1000) DEFAULT NULL,
+  `Header` varchar(1000) DEFAULT NULL,
+  `Detail` MEDIUMBLOB DEFAULT NULL,
   `UpVotes` int DEFAULT NULL,
   `DownVotes` int DEFAULT NULL,
   `IsAccepted` tinyint(1) DEFAULT '1',
